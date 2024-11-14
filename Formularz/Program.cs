@@ -28,7 +28,7 @@ namespace Formularz
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Dane}/{action=Form}/{id?}");
 
             app.Run();
         }

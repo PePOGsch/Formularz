@@ -1,0 +1,24 @@
+﻿@model Formularz.Models.Dane
+
+<h1>Form</h1>
+<form asp-action="Form" method="post">
+    <div>
+        <label asp-for="Imie">Twoje imię</label>
+        <input asp-for="Imie" />
+    </div>
+    <div>
+        <label asp-for="Email">Twój Email</label>
+        <input asp-for="Email" />
+    </div>
+    <div>
+        <label asp-for="Temat">Temat</label>
+        <input asp-for="Temat" />
+    </div>
+    <div>
+        <label asp-for="Tresc">Tresc</label>
+        <textarea asp-for="Tresc"></textarea>
+    </div>
+    <div>
+        <input type="submit" value="Prześlij" />
+    </div>
+</form>
