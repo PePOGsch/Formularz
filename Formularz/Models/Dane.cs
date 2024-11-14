@@ -34,7 +34,7 @@ namespace Formularz.Models
         [Required(ErrorMessage = "Prosze podac wiek")]
         [MinLength(2, ErrorMessage = "Wiek musi się składac z 2 cyfr")]
         [Range(10, 80, ErrorMessage = "Wiek musi być pomiędzy 10 a 80 lat")]
-        public int Wiek { get; set; }
+        public string Wiek { get; set; }
 
         [Required(ErrorMessage = "Proszę wybrać miasto")]
         public Kategorie Miasto { get; set; }
