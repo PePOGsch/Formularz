@@ -16,13 +16,14 @@ namespace Formularz.Controllers
         [HttpPost]
         public IActionResult Form(Dane dane)
         {
-            return View("Wynik", dane); // Przekierowanie do widoku Wynik z danymi
+            if (ModelState.IsValid)
+            {
+                return View("Wynik", dane);
+            }
+            else return View();
+
         }
 
-        public IActionResult Wynik(Dane dane)
-        {
-            return View(dane);
-        }
 
         // GET: DaneController
         public ActionResult Index()
